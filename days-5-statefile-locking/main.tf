@@ -21,7 +21,8 @@ resource "aws_security_group" "name"  {
   description = "Allow ssh and HTTP traffic"
   vpc_id      = aws_vpc.name.id
 
-  ingress {
+  ingress {      
+    
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
